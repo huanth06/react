@@ -48,6 +48,21 @@ export default class AddProduct extends Component {
             }
         });
     }
+    search = () => {
+        let inpSearch = document.getElementById('inpSearch').value;
+        let html = `<table border=1>`;
+        this.state.productList.filter((product)=>{
+            if(product.name==inpSearch){
+               html += `<tr
+                 <td>${product.id}</td>
+                 <td>${product.name}</td>
+                 <td>${product.price}</td>
+               </tr>`
+            }
+        })
+        html += `</table>`
+        document.getElementById('searchResult').innerHTML= html;
+    }
   render() {
     return (
       <>
@@ -67,11 +82,18 @@ export default class AddProduct extends Component {
                     ))
                 }
         </table>
-        <h2>Add new product:</h2>
-        <input type="text" value={this.state.inpID}  name="inpID"  placeholder='Product ID' onChange={this.changeInp} />
-        <input type="text" value={this.state.inpName}  name="inpName" placeholder='Product Name' onChange={this.changeInp}/>
-        <input type="text" value={this.state.inpPrice} name="inpPrice" placeholder='Price' onChange={this.changeInp} />
-        <button onClick={this.add}>Add New Product</button>
+        <div className='add_product mb-10'>
+            <h2>Add new product:</h2>
+            <input type="text" value={this.state.inpID}  name="inpID"  placeholder='Product ID' onChange={this.changeInp} />
+            <input type="text" value={this.state.inpName}  name="inpName" placeholder='Product Name' onChange={this.changeInp}/>
+            <input type="text" value={this.state.inpPrice} name="inpPrice" placeholder='Price' onChange={this.changeInp} />
+            <button onClick={this.add}>Add New Product</button>
+        </div>
+        <input id='inpSearch' type="text" name="inpSearch" placeholder='Product Name' />
+        <button onClick={this.search}>Add New Product</button>
+        <div id='searchResult'>
+            
+        </div>
       </>
     )
   }
