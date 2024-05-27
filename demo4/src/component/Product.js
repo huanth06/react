@@ -53,7 +53,7 @@ export default class AddProduct extends Component {
         let html = `<table border=1>`;
         this.state.productList.filter((product)=>{
             if(product.name==inpSearch){
-               html += `<tr
+               html += `<tr>
                  <td>${product.id}</td>
                  <td>${product.name}</td>
                  <td>${product.price}</td>
