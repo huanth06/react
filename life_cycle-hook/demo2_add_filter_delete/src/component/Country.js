@@ -6,7 +6,8 @@ export default class Country extends Component {
         super();
         this.state={
             list: [],
-            inpName:''
+            inpSearch:'',
+            rsCountry:[]
         }
     }
     getAll(){
@@ -21,8 +22,15 @@ export default class Country extends Component {
     }
     changeInp(e){
         this.setState({
-            inpName: e.target.value
+            inpSearch: e.target.value
         });
+    }
+    search = () =>{
+        let [...newCountryList] = this.state.list;
+        let rsCountry = newCountryList.filter((rs)=>rs.name.common.includes(this.state.inpSearch));
+        this.setState({
+            rsCountry:rsCountry
+        })
     }
   render() {
     return (
@@ -37,7 +45,15 @@ export default class Country extends Component {
                     }
                 </div>
                 <div className='col search'>
-                    <input type="" name=""  placeholder='Search...' onChange={this.changeInp} />
+                    <input type="" name=""  placeholder='Search...' onChange={(e)=>{this.changeInp(e)}} />
+                    <button type="submit" onClick={()=>{this.search()}}>Search</button>
+                    {
+                        this.state.rsCountry.map((country,key)=>(
+                            <p key={key}>
+                                <img width={50} src={country.flags.png} alt={country.name.common}/> Name: {country.name.common}, Area: {country.area}, Population: {country.population}
+                            </p>
+                        ))
+                    }
                 </div>
             </div>
             
