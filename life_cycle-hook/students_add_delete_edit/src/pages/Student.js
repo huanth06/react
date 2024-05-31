@@ -38,6 +38,15 @@ export default function Student() {
     return (
         <>
             <h2>Student List</h2>
+            <div className="col-12 mb-2">
+                <input placeholder="Student name" type="text" onChange={e => {
+                    let key = e.target.value.toLowerCase();
+                    axios.get('http://localhost:3000/students').then((res) => {
+                        let newList = res.data.filter(e => e.name.toLowerCase().includes(key));
+                        setList(newList)
+                    });
+                }} />
+            </div>
             <table class="table">
                 <thead>
                     <tr>
@@ -89,9 +98,6 @@ export default function Student() {
                 }}/>
                 <button type="" onClick={()=>{ add()
                 }}>Add</button>
-            </div>
-            <div className="col-12 mb-2">
-
             </div>
         </>
     )
