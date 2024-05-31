@@ -37,7 +37,7 @@ export default function Student() {
     }
     return (
         <>
-            <h2>Country List</h2>
+            <h2>Student List</h2>
             <table class="table">
                 <thead>
                     <tr>
@@ -90,7 +90,9 @@ export default function Student() {
                 <button type="" onClick={()=>{ add()
                 }}>Add</button>
             </div>
-            
+            <div className="col-12 mb-2">
+
+            </div>
         </>
     )
 }
