@@ -32,6 +32,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -40,36 +41,89 @@
 .container {
   height: 100vh;
 }
- 
+
 .form-signin {
   width: 330px;
   padding: 15px;
   margin: auto;
 }
- 
+
 .form-signin .checkbox {
   font-weight: 400;
 }
- 
+
 .form-signin .form-floating:focus-within {
   z-index: 2;
 }
- 
+
 .form-signin input[type="name"] {
   margin-bottom: -1px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
- 
+
 .form-signin input[type="password"] {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-.form-signin{
-  button{
+
+.form-signin {
+  button {
+    a {
+      color: #FFF;
+    }
+  }
+}
+a:hover{
+  text-decoration: none;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  li{
+    a{
+      color: #000;
+      &:hover{
+        color: #FF7800;
+      }
+    }
+  }
+}
+button{
+  a{
+    color: #FFF;
+  }
+  &.btn-light{
+    a{
+      color: #000;
+    }
+  }
+  &.btn-primary:hover{
     a{
       color: #FFF;
+    }
+  }
+}
+table{
+  margin: 20px 0;
+}
+
+.title {
+  font: 700 26px / 70px "Roboto";
+  text-align: center;
+}
+.row-custom{
+  margin: 20px 0;
+}
+.sidebar {
+
+  ul {
+    background: #f8f8f8;
+    height: 100%;
+    li{
+      list-style: none;
+
     }
   }
 }

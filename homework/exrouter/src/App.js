@@ -8,6 +8,7 @@ import ListProuct from "./pages/home/ListProduct";
 import ListOrder from "./pages/home/ListOrder";
 import Student from "./pages/home/Student";
 import AddStudent from "./pages/home/AddStudent";
+import DetailStudent from "./pages/home/DetailStudent";
 
 function App() {
   return (
@@ -24,9 +25,9 @@ function App() {
           <Route path="admin" element={<Admin />}>
             <Route path="" element={<ListProuct />}></Route>
             <Route path="order" element={<ListOrder />}></Route>
-            <Route path="student" element={<Student />}>
-              <Route path="add-student" element={<AddStudent />}></Route>
-            </Route>
+            <Route path="student" element={<Student />}></Route>
+            <Route path="add-student" element={<AddStudent />}></Route>
+            <Route path="detail/:id" element={<DetailStudent />}></Route>
           </Route>
         </Routes>
       </div>
