@@ -21,6 +21,7 @@ export default function BlogList() {
                         <th scope="col">Title</th>
                         <th scope="col">Image</th>
                         <th scope="col"></th>
+                        <th scope="col"></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -35,6 +36,12 @@ export default function BlogList() {
                             >
                                 Detail
                             </button></td>
+                            <td>
+                                <button className="btn btn-success"
+                                >
+                                    <Link to={"/blog/blog-detail/edit/" + e.id}>Edit</Link>
+                                </button>
+                            </td>
                         </tr>
                     ))}
                 </tbody>

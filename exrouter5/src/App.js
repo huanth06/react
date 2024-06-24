@@ -14,6 +14,7 @@ import ProductAdd from "./pages/home/products/ProductAdd";
 import ProudctEdit from "./pages/home/products/ProudctEdit";
 import BlogList from "./pages/home/posts/BlogList";
 import BlogDetail from "./pages/home/posts/BlogDetail";
+import BlogEdit from "./pages/home/posts/BlogEdit";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/blog" element={<BlogList />}>
           </Route>
           <Route path="/blog/blog-detail/:id" element={<BlogDetail />}></Route>
+          <Route path="/blog/blog-detail/edit/:id" element={<BlogEdit />}></Route>
         </Routes>
       </div>
     </>
