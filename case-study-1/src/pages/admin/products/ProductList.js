@@ -37,7 +37,7 @@ export default function ListProuct() {
                                 <td>{e.price}</td>
                                 <td>{e.quantity}</td>
                                 <td>{e.category.name}</td>
-                                <td><img src={e.images[0]} alt="" /></td>
+                                <td><img src={'http://localhost:3000/images/'+e.images[0]} alt="" width={50}/></td>
                                 <td className="btn-container">
                                     <button className='btn btn-danger'
                                         onClick={() => {
