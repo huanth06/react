@@ -21,6 +21,7 @@ function App() {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
         <Route path="/_cpanel" element={<Admin />}>
+          <Route path="" element={<ProductList />}></Route>
           <Route path="/_cpanel/product-add" element={<ProductAdd />}></Route>
           <Route path="/_cpanel/products" element={<ProductList />}></Route>
           <Route path="/_cpanel/product/:id" element={<ProductDetail />}></Route>

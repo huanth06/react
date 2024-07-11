@@ -37,7 +37,7 @@ export default function ListProuct() {
                                 <td>{e.price}</td>
                                 <td>{e.quantity}</td>
                                 <td>{e.category.name}</td>
-                                <td><img src={'http://localhost:3000/images/'+e.images[0]} alt="" width={50}/></td>
+                                <td> {e.images?.[0] && <img src={'https://firebasestorage.googleapis.com/v0/b/c05casestudy.appspot.com/o/files%2F'+e.images[0]+'?alt=media&token=8036fb9e-fe65-4195-87cd-f01abfdb862a'} alt={e.name} width={50}/>}</td>
                                 <td className="btn-container">
                                     <button className='btn btn-danger'
                                         onClick={() => {
