@@ -16,7 +16,7 @@ export default function ListProuct() {
     return (
         <>
             <div className="product-list mt-4">
-                <button type="button" className='btn btn-primary'><Link to={'/admin/product-add'}>Add New</Link></button>
+                <button type="button" className='btn btn-primary'><Link to={'/_cpanel/product-add'}>Add New</Link></button>
                 <table className="table">
                     <thead className='thead-dark'>
                         <tr>
@@ -54,14 +54,14 @@ export default function ListProuct() {
                                     </button>
                                     <button className='btn btn-info'
                                         onClick={() => {
-                                            navigate('/admin/product/' + e.id, { state: { obj: e } })
+                                            navigate('/_cpanel/product/' + e.id, { state: { obj: e } })
                                         }}
                                     >
                                         Detail
                                     </button>
                                     <button className="btn btn-success"
                                     >
-                                        <Link to={"/admin/product/edit/" + e.id}>Edit</Link>
+                                        <Link to={"/_cpanel/product/edit/" + e.id}>Edit</Link>
                                     </button>
                                 </td>
                             </tr>

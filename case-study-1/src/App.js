@@ -21,8 +21,10 @@ function App() {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
         <Route path="/_cpanel" element={<Admin />}>
+          <Route path="/_cpanel/product-add" element={<ProductAdd />}></Route>
           <Route path="/_cpanel/products" element={<ProductList />}></Route>
-          <Route path="" element={<ProductList />}></Route>
+          <Route path="/_cpanel/product/:id" element={<ProductDetail />}></Route>
+          <Route path="/_cpanel/product/edit/:id" element={<ProudctEdit />}></Route>
         </Route>
         <Route path="home" element={<Home />}>
           <Route path="order" element={<ListOrder />}></Route>
@@ -33,10 +35,7 @@ function App() {
           <Route path="order" element={<ListOrder />}></Route>
           <Route path="student" element={<Student />}></Route>
           <Route path="add-student" element={<AddStudent />}></Route>
-          <Route path="product-add" element={<ProductAdd />}></Route>
           <Route path="detail/:id" element={<DetailStudent />}></Route>
-          <Route path="product/:id" element={<ProductDetail />}></Route>
-          <Route path="/admin/product/edit/:id" element={<ProudctEdit />}></Route>
         </Route>
       </Routes>
     </>
