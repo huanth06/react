@@ -112,6 +112,25 @@ button{
 }
 table{
   margin: 20px 0;
+  tr{
+    td{
+      .table,.table-borderless{
+        margin: 0;
+      }
+    }
+  }
+}
+.navbar-dark{
+  .navbar-nav{
+    .nav-link{
+      &:hover{
+        color: #FFF;
+        svg{
+          fill: #FFF;
+        }
+      }
+    }
+  }
 }
 .err{
   color: #dc3545;
@@ -132,6 +151,14 @@ table{
       list-style: none;
 
     }
+  }
+}
+.page-title{
+  h1{
+    display: inline-block;
+  }
+  .btn{
+    float: right;
   }
 }
 .product-list{

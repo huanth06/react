@@ -27,7 +27,7 @@ export default function AdminSidebarMenu() {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="#">
+                        <Link className="nav-link" to="/_cpanel/categories">
                             <svg xmlns="http://www.w3.org/2000/svg"  version="1.1" id="Layer_1" width="20px" height="20px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" >
                                 <g display="none">
                                     <path display="inline" d="M20.01,36.5c-0.277,0-0.537-0.137-0.693-0.368L9.468,21.529c-1.171-1.861-1.79-3.993-1.79-6.162   C7.678,8.824,13.206,3.5,20,3.5c6.795,0,12.322,5.324,12.322,11.867c0,2.164-0.612,4.284-1.77,6.129l-9.851,14.636   C20.547,36.363,20.287,36.5,20.01,36.5L20.01,36.5z M20,5.17c-5.873,0-10.652,4.574-10.652,10.197c0,1.854,0.525,3.669,1.52,5.251   l9.14,13.55l9.146-13.581c0.981-1.566,1.499-3.371,1.499-5.22C30.652,9.744,25.873,5.17,20,5.17L20,5.17z" />
@@ -170,7 +170,7 @@ export default function AdminSidebarMenu() {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="#">
+                        <Link className="nav-link" to="/_cpanel/orders">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none">
                                 <path d="M7.5 18C8.32843 18 9 18.6716 9 19.5C9 20.3284 8.32843 21 7.5 21C6.67157 21 6 20.3284 6 19.5C6 18.6716 6.67157 18 7.5 18Z" stroke="#1C274C" stroke-width="1.5" />
                                 <path d="M16.5 18.0001C17.3284 18.0001 18 18.6716 18 19.5001C18 20.3285 17.3284 21.0001 16.5 21.0001C15.6716 21.0001 15 20.3285 15 19.5001C15 18.6716 15.6716 18.0001 16.5 18.0001Z" stroke="#1C274C" stroke-width="1.5" />

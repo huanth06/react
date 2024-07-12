@@ -1,8 +1,6 @@
 import { Outlet } from "react-router-dom";
-import AdminMenu from "../../components/AdminMenu";
-import AdminSideBar from "../../components/AdminSideBaar";
-import AdminNavbar from "../../components/AdminNavbar";
-import AdminSidebarMenu from "../../components/AdminSidebarMenu";
+import AdminNavbar from "../../components/admin/AdminNavbar";
+import AdminSidebarMenu from "../../components/admin/AdminSidebarMenu";
 
 export default function Admin() {
   return (
