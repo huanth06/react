@@ -5,7 +5,7 @@ export default function AdminNavbar() {
     return (
         <nav className="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
             <Link className="navbar-brand col-md-3 col-lg-2 mr-0 px-3" to="/_cpanel">
-                <img src="https://firebasestorage.googleapis.com/v0/b/c05casestudy.appspot.com/o/files%2Flogo-main.webp?alt=media&token=561300bc-d932-44e7-ba04-c0437322542c" alt="OCAM Logo" width={100} />
+                <img src="https://firebasestorage.googleapis.com/v0/b/c05casestudy.appspot.com/o/case-study-1%2Flogo-main.webp?alt=media&token=056c99fb-88dc-41c6-8b77-2dc0fc204b11" alt="OCAM Logo" width={100} />
             </Link>
             <button className="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>

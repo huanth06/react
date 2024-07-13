@@ -30,10 +30,10 @@ export default function Login() {
                             validationSchema={validateSchema}
                             onSubmit={values => {
                                 axios.post('http://localhost:3000/users/login', values).then(() => {
-                                    alert('Dang nhap thanh cong!');
+                                    alert('Login successful.');
                                     navigate('/_cpanel')
                                 }).catch(() => {
-                                    alert('Tai khoan hoac mat khau khong dung.');
+                                    alert('Incorrect username or password.');
                                 })
                             }}
                         >

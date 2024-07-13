@@ -33,7 +33,7 @@ export default function Register() {
                             validationSchema={validateSchema}
                             onSubmit={values => {
                                 axios.post('http://localhost:3000/users/register', values).then(() => {
-                                    alert('Dang ky thanh cong!');
+                                    alert('Registration successful.');
                                     navigate('/login');
                                 });
                             }}
